@@ -1,0 +1,30 @@
+/* Definição dos temas da página */
+
+body.modo-escuro{
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+}
+
+body.modo-escuro .capa{
+    display: none;
+}
+
+body.modo-escuro .capa--dark{
+    display: block;
+}
+
+body.modo-escuro .link{
+    background-color: #4d4d4d;
+}
+
+body.modo-escuro .link__descricao{
+    color: var(--cor-branco);
+}
+
+body.modo-escuro .link__icone--x{
+    display: none;
+}
+
+body.modo-escuro .link__icone--x-dark{
+    display: block;
+}
