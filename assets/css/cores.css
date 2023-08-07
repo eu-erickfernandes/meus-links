@@ -1,0 +1,11 @@
+/* Definição das cores da página */
+
+:root{
+    --cor-preto: #333;
+    --cor-branco: #FAFAFA;
+    --cor-rosa: #FF6680;
+    --cor-amarelo: #FFE565;
+    --cor-azul: #66CCFF;
+    --cor-roxo: #8066FF;
+    --cor-vermelho: #FF6666;
+}

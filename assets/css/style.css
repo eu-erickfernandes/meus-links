@@ -1,0 +1,80 @@
+/* Estilização geral da página */
+
+header, main, .container-titulo, .container-links{
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    background-color: var(--cor-branco);
+}
+
+.capa{
+    height: 10rem;
+    object-fit: cover;
+    width: 100%;
+}
+
+.faixa{
+    background-image: linear-gradient(90deg, var(--cor-rosa) 0%, var(--cor-amarelo) 25%, var(--cor-amarelo) 75%,  var(--cor-azul) 100%);
+    height: 1rem;
+}
+
+.botao-tema{
+    aspect-ratio: 1;
+    background-color: transparent;
+    background-image: url('../icones/dark-mode.svg');
+    background-size: cover;
+    border: none;
+    right: 1.5rem;
+    position: absolute;
+    top: 1.5rem;
+    width: 2.5rem;
+}
+
+main{
+    align-items: center;
+    box-sizing: border-box;
+    gap: 1.5rem;
+    padding-inline: 1.5rem;
+    position: relative;
+    top: -3.75rem;
+}
+
+.minha-foto{
+    aspect-ratio: 1;
+    border: 4px solid var(--cor-branco);
+    border-radius: 100vw;
+    width: 7.5rem;
+}
+
+.container-titulo{
+    gap: .5rem;
+    text-align: center;
+}
+
+.container-links{
+    gap: 1rem;
+    width: 100%;
+}
+
+.link{
+    align-items: center;
+    background-color: var(--cor-branco);
+    border-radius: 1rem;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.link__icone{
+    aspect-ratio: 1;
+    width: 2.5rem;
+}
+
+.link__icone--x-dark{
+    display: none;
+}
