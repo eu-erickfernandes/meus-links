@@ -7,11 +7,13 @@ header, main, .container-titulo, .container-links{
 
 body{
     background-color: var(--cor-branco);
+    transition: .5s;
 }
 
 .capa{
     height: 10rem;
     object-fit: cover;
+    object-position: center;
     width: 100%;
 }
 
@@ -41,6 +43,7 @@ main{
     align-items: center;
     box-sizing: border-box;
     gap: 1.5rem;
+    margin: auto;
     padding-inline: 1.5rem;
     position: relative;
     top: -3.75rem;
@@ -73,6 +76,11 @@ main{
     gap: 1rem;
     padding: 1rem;
     text-decoration: none;
+    transition: .5s;
+}
+
+.link:hover{
+    background-color: hsl(0, 0%, 90%);
 }
 
 .link__icone{
@@ -82,4 +90,19 @@ main{
 
 .link__icone--x-dark{
     display: none;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (width > 1200px) {
+    .capa{
+        height: 20rem;
+    }
+
+    .faixa{
+        background-image: linear-gradient(90deg, var(--cor-rosa) 0%, var(--cor-amarelo) 30%, var(--cor-amarelo) 60%,  var(--cor-azul) 100%);
+    }
+
+    main{
+        width: 30%;
+    }
 }

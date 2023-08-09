@@ -5,6 +5,10 @@ body.modo-escuro{
     color: var(--cor-branco);
 }
 
+body.modo-escuro .botao-tema{
+    background-image: url('../icones/light-mode.svg');
+}
+
 body.modo-escuro .capa{
     display: none;
 }
