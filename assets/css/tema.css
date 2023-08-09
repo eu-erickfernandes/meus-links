@@ -1,34 +1,50 @@
 /* Definição dos temas da página */
 
-body.modo-escuro{
+/* AJUSTES PARA O TEMA CLARO */
+
+.link__icone--x-dark{
+    display: none;
+}
+
+.capa--dark{
+    display: none;
+}   
+
+/* AJUSTES PARA O TEMA ESCURO */
+
+body.tema-escuro{
     background-color: var(--cor-preto);
     color: var(--cor-branco);
 }
 
-body.modo-escuro .botao-tema{
+body.tema-escuro .botao-tema{
     background-image: url('../icones/light-mode.svg');
 }
 
-body.modo-escuro .capa{
+body.tema-escuro .capa{
     display: none;
 }
 
-body.modo-escuro .capa--dark{
+body.tema-escuro .capa--dark{
     display: block;
 }
 
-body.modo-escuro .link{
+body.tema-escuro .link{
     background-color: #4d4d4d;
 }
 
-body.modo-escuro .link__descricao{
+body.tema-escuro .link__descricao{
     color: var(--cor-branco);
 }
 
-body.modo-escuro .link__icone--x{
+body.tema-escuro .link__icone--x{
     display: none;
 }
 
-body.modo-escuro .link__icone--x-dark{
+body.tema-escuro .link__icone--x-dark{
     display: block;
+}
+
+body.tema-escuro .rodape{
+    background-color: hsl(0, 0%, 10%);
 }

@@ -2,10 +2,9 @@
 
 (() => {
     const botaoTema = document.querySelector('[data-botao-tema]')
-    const imagemCapa = document.querySelector('[data-imagem-capa]')
 
     const trocaTema = () => {
-        document.body.classList.toggle('modo-escuro')
+        document.body.classList.toggle('tema-escuro')
     }
 
     botaoTema.addEventListener('click', trocaTema)

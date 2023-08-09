@@ -1,5 +1,9 @@
 /* Estilização geral da página */
 
+html, body{
+    height: 100%;
+}
+
 header, main, .container-titulo, .container-links{
     display: flex;
     flex-direction: column;
@@ -15,10 +19,6 @@ body{
     object-fit: cover;
     object-position: center;
     width: 100%;
-}
-
-.capa--dark{
-    display: none;
 }
 
 .faixa{
@@ -88,11 +88,30 @@ main{
     width: 2.5rem;
 }
 
-.link__icone--x-dark{
-    display: none;
+
+.rodape{
+    background-color: var(--cor-preto);
+    padding: 1.5rem;
 }
 
+.rodape__link{
+    align-items: center;
+    color: var(--cor-branco);
+    display: flex;
+    gap: .5rem;
+}
+
+    .rodape__link::before{
+        aspect-ratio: 1;
+        background-image: url('../icones/github.svg');
+        background-size: cover;
+        content: '';
+        display: block;
+        width: 1.5rem;
+    }
+
 /* RESPONSIVIDADE */
+
 @media screen and (width > 1200px) {
     .capa{
         height: 20rem;
