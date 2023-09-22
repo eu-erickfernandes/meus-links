@@ -72,21 +72,31 @@ main{
     border-radius: 1rem;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
     box-sizing: border-box;
+    color: var(--cor-preto);
     display: flex;
     gap: 1rem;
     padding: 1rem;
     text-decoration: none;
     transition: .5s;
+
+    &:hover{
+        background-color: hsl(0, 0%, 90%);
+    }
 }
 
-.link:hover{
-    background-color: hsl(0, 0%, 90%);
-}
+    .link--destaque{
+        background-color: var(--cor-amarelo);
+        color: var(--cor-preto);
 
-.link__icone{
-    aspect-ratio: 1;
-    width: 2.5rem;
-}
+        &:hover{
+            background-color: hsla(50, 100%, 80%);
+        }
+    }
+
+    .link__icone{
+        aspect-ratio: 1;
+        width: 2.5rem;
+    }
 
 
 .rodape{

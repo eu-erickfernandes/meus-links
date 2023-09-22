@@ -31,10 +31,20 @@ body.tema-escuro .capa--dark{
 
 body.tema-escuro .link{
     background-color: #4d4d4d;
+    color: var(--cor-branco);
+
+    &:hover{
+        background-color: hsl(0, 0%, 40%);
+    }
 }
 
-body.tema-escuro .link__descricao{
-    color: var(--cor-branco);
+body.tema-escuro .link--destaque{
+    background-color: var(--cor-amarelo);
+    color: var(--cor-preto);
+
+    &:hover{
+        background-color: hsla(50, 100%, 80%);
+    }
 }
 
 body.tema-escuro .link__icone--x{

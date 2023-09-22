@@ -18,7 +18,3 @@ body{
 .subtitulo{
     font-size: 1.25rem;
 }
-
-.link__descricao{
-    color: var(--cor-preto);
-}
